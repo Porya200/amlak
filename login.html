@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ورود - عضویت</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/IRANSans.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/signup.css">
+</head>
+<body>
+    <div class="container my-2 d-flex flex-column flex-lg-row">
+        <div class="welcome">
+          <h4>به سامانه املاک امین خوش آمدید</h4>
+        </div>
+        <div class="Home">
+          <h6><a href="/index.html" class="d-flex align-items-center">بازگشت به صفحه اصلی<i class="far fa-arrow-alt-circle-left mr-2"></i></a></h6>
+        </div>
+        <div class="box"></div>
+        <div class="container-forms">
+          <div class="container-info d-flex flex-column flex-lg-row col">
+            <div class="info-item col-lg-6 col d-none d-md-block">
+              <div class="table d-flex justify-content-center align-items-center">
+                <div class="table-cell pr-0 pl-5">
+                  <p>
+                    آیا هنوز ثبت نام نکرده اید؟
+                  </p>
+                  <button class="btn btn-outline-dark-2 px-3">
+                    ثبت نام
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="info-item col-lg-6">
+              <div class="table d-flex justify-content-between align-items-center">
+                <div class="table-cell p-0 pr-4">
+                  <p>
+                    آیا ثبت نام کرده اید؟
+                  </p>
+                  <button class="btn btn-outline-dark-2 px-4">
+                    ورود
+                  </button>
+                </div>
+                <div class="table-cell p-0 d-block d-md-none">
+                  <p>
+                    آیا هنوز ثبت نام نکرده اید؟
+                  </p>
+                  <button class="btn btn-outline-dark-2 px-3">
+                    ثبت نام
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-form d-flex flex-column flex-lg-row">
+            <div class="form-item log-in">
+              <div class="table d-flex justify-content-center align-items-center">
+                <div class="table-cell">
+                  <form class="d-flex flex-column align-items-center">
+                    <div class="form-group position-relative icon-user w-100">
+                      <input type="text" class="form-control-v2" placeholder="نام کاربری">
+                    </div>
+                    <div class="form-group position-relative icon-key w-100">
+                      <input type="password" class="form-control-v2" placeholder="رمز عبور">
+                    </div>
+                    <div class="form-group position-relative w-100">
+                        <select class="form-control-v2 custom-select" id="inlineFormCustomSelect">
+                          <option selected>نوع ورود را انتخاب کنید ...</option>
+                          <option value="1">کاربر</option>
+                          <option value="2">مشاور</option>
+                          <option value="3">مالک</option>
+                          <option value="3">مدیر</option>
+                        </select>
+                      </div>
+                    <button type="submit" class="btn btn-submit">ورود</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="form-item sign-up">
+              <div class="table d-flex justify-content-center align-items-center">
+                <div class="table-cell">
+                    <form class="d-flex flex-column align-items-center">
+                        <div class="form-group position-relative icon-user w-100">
+                          <input type="text" class="form-control-v2" placeholder="نام کاربری">
+                        </div>
+                        <div class="form-group position-relative icon-email w-100">
+                          <input type="email" class="form-control-v2" placeholder="ایمیل">
+                        </div>
+                        <div class="form-group position-relative icon-key w-100">
+                          <input type="password" class="form-control-v2" placeholder="رمز عبور">
+                        </div>
+                        <div class="form-group position-relative w-100">
+                            <select class="form-control-v2 custom-select" id="inlineFormCustomSelect">
+                              <option selected>نوع ثبت نام را انتخاب کنید ...</option>
+                              <option value="1">کاربر</option>
+                              <option value="2">مشاور</option>
+                              <option value="3">مالک</option>
+                              <option value="3">مدیر</option>
+                            </select>
+                          </div>
+                        <button type="submit" class="btn btn-submit">ثبت نام</button>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script>
+        $(".info-item .btn").click(function(){
+          $(".container").toggleClass("log-in");
+        });
+        $(".container-form .btn").click(function(){
+          $(".container").addClass("active");
+        });
+      </script>
+</body>
+</html>
